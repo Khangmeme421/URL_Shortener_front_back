@@ -2,7 +2,6 @@ const express = require("express");
 const router = express.Router();
 const vocabController = require("../controllers/vocabController");
 
-router.get("/", vocabController.getAllLinks);
 router.get("/search", vocabController.getLinkByUrl);
 router.get("/shortURL", vocabController.getLinkByShortenedLink);
 router.post("/", vocabController.createLink);

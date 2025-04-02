@@ -16,7 +16,7 @@ app.listen(port, () => console.log(`Server running on port ${port}`));
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/link-storage')
+mongoose.connect('mongodb+srv://Anhlong1911:anhlongmeme1911@cluster0.ucc2h.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(() => console.log("Connected to MongoDB"))
 .catch(err => console.error("Could not connect to MongoDB", err));
 
